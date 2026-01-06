@@ -5,6 +5,7 @@ internal class MatchingBrackets
 {
     private static void Main()
     {
+        // Read input string and print all substrings enclosed in matching brackets.
         string input = Console.ReadLine();
         Stack<int> stack = new Stack<int>();
         for (int i = 0; i < input.Length; i++)
