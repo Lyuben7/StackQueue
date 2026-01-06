@@ -5,7 +5,7 @@
         // Read a line of integers, push onto Stack and pop them to reverse order.
         var line = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(line)) return;
-
+        // Split by space or tab, remove empty entries.
         var tokens = line.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
         Stack<int> stack = new Stack<int>();
         foreach (var t in tokens) stack.Push(int.Parse(t));
